@@ -1,0 +1,32 @@
+2)mkdir Folder
+3)cd Folder
+4)mkdir F1 F2 F3
+5)cd F1
+6)touch S1.txt S2.txt S3.txt   touch file1.json file2.json
+7)mkdir f1 f2 f3
+8)ls -la
+9)vim S1.txt
+10)нажать I написать текст, 
+11)нажать Esc, потом нажать :wq [enter]
+12)cd ../..
+13) mv ./S1.txt [путь к папке] это если мы перемещаем с текущей папки, если же нет, то мы пишем mv [путь к файлу]/имя файла [путь куда перемещаем]
+14)тоже самое что в пункте 13, только с командой cp(copy)
+15)find ./ -type f -name "*file1.txt*"
+16)grep запрос имя_файла (находит конкретное слово в документах, упрощает работу с большим обьемом текста) можно также искать по двум словам grep запрос1 файл | grep запрос2 файл, также можно искать в нескольких файлах grep -l slovo ./*
+17)head -n 10 имя_файла, так же можно с помощью cat имя_файла | sed -n 1,2p
+18)tail имя_файла либо tail -n число строк имя_файла
+19)less имя_файла показывает текст в котором можно производить быстрый поиск по слову или строке, внутри открытого файла пишем /текст
+20)date
+
+* 
+1)GET 'запрос' или url 'запрос'
+2)
+#! /bin/bash
+mkdir foldscr
+cd foldscr
+mkdir f1 f2 f3
+cd f1
+touch file1.txt file2.txt file3.txt file4.json file5.json
+mkdir F1 F2 F3
+ls -l
+mv ./file1.txt file2.txt /mnt/c/users/admin/Desktop/Folder_main/foldscr/f2
